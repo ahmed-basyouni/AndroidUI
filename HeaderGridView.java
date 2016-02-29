@@ -1,5 +1,3 @@
-package com.example.testlistviewbanner;
-
 /*
  * Copyright (C) 2013 The Android Open Source Project
  *
@@ -134,7 +132,7 @@ public class HeaderGridView extends GridView {
         addHeaderView(v, null, true);
     }
     
-    /**
+    	/** added by Ahmed Basyouni
 	 * this method take supported fragment and fragment activity to add that
 	 * fragment as a banner to listView it create a layout at runtime then when
 	 * view is added to list we replace it with fragment otherwise it will crash
