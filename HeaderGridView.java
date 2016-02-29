@@ -36,6 +36,7 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.WrapperListAdapter;
 /**
+ * Edited by Ahmed Basyouni
  * A {@link GridView} that supports adding header rows in a
  * very similar way to {@link ListView}.
  * See {@link HeaderGridView#addHeaderView(View, Object, boolean)}
