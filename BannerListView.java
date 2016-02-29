@@ -28,6 +28,7 @@ import android.widget.AdapterView;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -35,7 +36,7 @@ import android.widget.WrapperListAdapter;
 
 /**
  * 
- * @author Ahmed Basyouni
+ * @author ahmedb
  * 
  *         listView that support adding banner as first item or not as it will
  *         act as a normal listView to use this class all you have to do is to
@@ -66,7 +67,7 @@ public class BannerListView extends ListView {
 
 	/**
 	 * 
-	 * @author Ahmed Basyouni 
+	 * @author ahmedb 
 	 * 
 	 * 		   subclass of frameLayout to get full width of screen
 	 *         since banner will be full width
@@ -99,7 +100,7 @@ public class BannerListView extends ListView {
 	public void addBannerFragment(final Fragment fragment,
 			final FragmentActivity activity) {
 
-		RelativeLayout layout = new RelativeLayout(activity);
+		LinearLayout layout = new LinearLayout(activity);
 
 		AbsListView.LayoutParams param = new AbsListView.LayoutParams(
 				LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
@@ -154,8 +155,8 @@ public class BannerListView extends ListView {
 		}
 
 		FixedViewInfo info = new FixedViewInfo();
-		FrameLayout fl = new FullWidthFixedViewLayout(getContext());
-		fl.addView(view);
+//		FrameLayout fl = new FullWidthFixedViewLayout(getContext());
+//		fl.addView(view);
 		info.view = view;
 		mBannerView = info;
 		// mHeaderViewInfos.add(info);
@@ -192,7 +193,7 @@ public class BannerListView extends ListView {
 
 	/**
 	 * 
-	 * @author Ahmed Basyouni
+	 * @author ahmedb
 	 * 
 	 *         custom adapter that take a banner and an adapter if there is
 	 *         header it will add it as first view and return the passed adapter
