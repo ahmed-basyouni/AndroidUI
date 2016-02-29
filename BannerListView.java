@@ -1,5 +1,3 @@
-package com.example.testlistviewbanner;
-
 /*
  * Copyright (C) 2016 based on The Android Open Source Project HeaderGridView
  *
@@ -37,7 +35,7 @@ import android.widget.WrapperListAdapter;
 
 /**
  * 
- * @author ahmedb
+ * @author Ahmed Basyouni
  * 
  *         listView that support adding banner as first item or not as it will
  *         act as a normal listView to use this class all you have to do is to
@@ -68,7 +66,7 @@ public class BannerListView extends ListView {
 
 	/**
 	 * 
-	 * @author ahmedb 
+	 * @author Ahmed Basyouni 
 	 * 
 	 * 		   subclass of frameLayout to get full width of screen
 	 *         since banner will be full width
@@ -194,7 +192,7 @@ public class BannerListView extends ListView {
 
 	/**
 	 * 
-	 * @author ahmedb
+	 * @author Ahmed Basyouni
 	 * 
 	 *         custom adapter that take a banner and an adapter if there is
 	 *         header it will add it as first view and return the passed adapter
